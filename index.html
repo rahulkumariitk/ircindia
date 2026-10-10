@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Indian Recycle Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+  <meta name="description" content="Indian Recycle Company (IRC) is an industrial recycling company for a clean and green India. Lithium-ion battery recycling first, launching 2027.">
+  <meta property="og:title" content="Indian Recycle Company (IRC)">
+  <meta property="og:description" content="Recovering what India throws away. Lithium-ion battery recycling, launching 2027.">
+  <meta property="og:image" content="assets/logo/irc-logo-horizontal.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<div class="ribbon" role="status">
+  <div class="wrap">
+    <span><b>Research &amp; development phase.</b> IRC begins commercial operations in 2027.</span>
+    <span class="cd" id="countdown"></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="IRC, Indian Recycle Company, home"><picture>
+        <source srcset="assets/logo/irc-logo-horizontal-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="assets/logo/irc-logo-horizontal.svg" alt="IRC – Indian Recycle Company" width="180" height="50">
+      </picture></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#recycle">What we recycle</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#industry">Industry</a></li>
+      <li><a href="#partner">Work with us</a></li>
+    </ul>
+    <a class="btn btn-solid" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <span class="eyebrow">Indian Recycle Company · Launching 2027</span>
+      <h1>Recovering what India throws away, <span>for a clean and green India.</span></h1>
+      <p class="lede">IRC is an industrial recycling company. We begin with lithium-ion batteries, recovering lithium, nickel, cobalt, manganese, copper and graphite and keeping hazardous waste out of our soil and water. Then we expand into new waste streams.</p>
+      <div class="ctas">
+        <a class="btn btn-solid" href="#partner">Partner with us</a>
+        <a class="btn btn-line" href="#process">See our process</a>
+      </div>
+      <div class="status">
+        <div class="now"><small>Where we are</small><b>Process R&amp;D and plant design</b></div>
+        <div><small>Commercial launch</small><b>2027</b></div>
+        <div><small>First stream</small><b>Lithium-ion batteries</b></div>
+      </div>
+    </div>
+    <div class="stage" aria-label="Animation: materials from different waste streams entering the IRC loop">
+      <canvas id="loopCanvas"></canvas>
+      <span class="tagc" style="--c:#7A5CC8;top:8%;left:2%">Li-ion batteries</span>
+      <span class="tagc" style="--c:#C06A1F;top:22%;right:0;animation-delay:-2s">E-waste</span>
+      <span class="tagc" style="--c:#1E8BB3;bottom:16%;left:0;animation-delay:-4s">Solar panels</span>
+      <span class="tagc" style="--c:#7D8A93;bottom:4%;right:8%;animation-delay:-1s">Metal scrap</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="alt">
+  <div class="wrap">
+    <div class="about">
+      <div style="display:grid;gap:18px">
+        <span class="eyebrow">About IRC</span>
+        <p class="big">An industrial recycling unit with one vision: <em>a clean and green India.</em></p>
+        <p class="lede">Batteries, electronics and solar panels are arriving at end of life faster than India can process them safely. IRC is building the plant, the process and the collection network to turn that waste back into raw materials for Indian industry.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="var(--green-soft)"/><path d="M14 22a8 8 0 1 1 3 6.2" stroke="var(--green)" stroke-width="3" stroke-linecap="round"/><circle cx="17" cy="28" r="2.6" fill="var(--saffron-fill)"/></svg><div><b>Recover</b><p>Extract critical minerals to battery grade, so they go back into new products instead of being imported.</p></div></div>
+        <div class="pillar"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="var(--green-soft)"/><path d="M22 12l9 4v7c0 5-4 8-9 10-5-2-9-5-9-10v-7z" stroke="var(--green)" stroke-width="2.6" stroke-linejoin="round"/><path d="M18 22l3 3 5-6" stroke="var(--green)" stroke-width="2.6" stroke-linecap="round"/></svg><div><b>Protect</b><p>Handle hazardous electrolytes, fluorides and heavy metals safely, with fire-safe processing and treated effluent.</p></div></div>
+        <div class="pillar"><svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="var(--green-soft)"/><path d="M13 30V20M22 30V14M31 30v-7" stroke="var(--green)" stroke-width="3" stroke-linecap="round"/></svg><div><b>Expand</b><p>Start with lithium-ion, then add e-waste, solar panels and other streams on the same platform.</p></div></div>
+      </div>
+    </div>
+    <div class="why">
+      <div><b class="num">132 GWh</b><span>Annual lithium-ion battery demand projected for India by 2030</span></div>
+      <div><b class="num">90%</b><span>Material recovery required for EV and portable batteries from 2026-27</span></div>
+      <div><b class="num">₹1,500 cr</b><span>National incentive scheme for critical-mineral recycling, 2025–2031</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE RECYCLE -->
+<section id="recycle">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we recycle</span>
+      <h2>Lithium-ion first. More streams to follow.</h2>
+      <p class="lede">Our platform is designed around chemical recovery of metals, which carries across many kinds of waste. Here is what we are working on now and what comes next.</p>
+    </div>
+    <div class="streams">
+      <article class="stream first">
+        <svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><rect x="16" y="12" width="24" height="36" rx="5" stroke="var(--green)" stroke-width="3"/><rect x="23" y="7" width="10" height="6" rx="2" fill="var(--green)"/><path d="M30 20l-6 9h7l-5 9" stroke="var(--saffron-fill)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="chip-s st-rd">In R&amp;D · launch stream</span>
+        <h3>Lithium-ion batteries</h3>
+        <p>EV and two-wheeler packs, e-rickshaw batteries, phones, laptops and energy storage.</p>
+        <ul><li>Lithium, nickel, cobalt, manganese</li><li>Copper, aluminium, graphite</li></ul>
+      </article>
+      <article class="stream">
+        <svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><rect x="10" y="14" width="36" height="28" rx="3" stroke="var(--green)" stroke-width="3"/><path d="M18 22h8v8h-8zM32 22h6M32 28h6M18 36h20" stroke="var(--green)" stroke-width="2.5"/><circle cx="22" cy="26" r="1.8" fill="var(--saffron-fill)"/></svg>
+        <span class="chip-s st-plan">Planned</span>
+        <h3>E-waste &amp; circuit boards</h3>
+        <p>Printed circuit boards, cables and devices. India generates over 3.2 million tonnes of e-waste a year.</p>
+        <ul><li>Copper, tin, precious metals</li><li>Plastics for recycling</li></ul>
+      </article>
+      <article class="stream">
+        <svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><path d="M10 38l6-22h24l6 22z" stroke="var(--green)" stroke-width="3" stroke-linejoin="round"/><path d="M14 27h28M24 16l-3 22M32 16l3 22" stroke="var(--green)" stroke-width="2"/><circle cx="44" cy="12" r="4" fill="var(--saffron-fill)"/></svg>
+        <span class="chip-s st-exp">Exploring</span>
+        <h3>Solar PV modules</h3>
+        <p>Retired solar panels from India's fast-growing installed base.</p>
+        <ul><li>Glass, aluminium frames</li><li>Silicon, silver, copper</li></ul>
+      </article>
+      <article class="stream">
+        <svg viewBox="0 0 56 56" fill="none" aria-hidden="true"><path d="M12 40l8-14 8 6 6-12 10 20z" stroke="var(--green)" stroke-width="3" stroke-linejoin="round"/><circle cx="20" cy="17" r="4" fill="var(--saffron-fill)"/></svg>
+        <span class="chip-s st-exp">Exploring</span>
+        <h3>Other batteries &amp; metal scrap</h3>
+        <p>Further battery chemistries and industrial scrap containing critical minerals.</p>
+        <ul><li>Nickel, cobalt-bearing scrap</li><li>Catalysts and alloys</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE A BATTERY -->
+<section id="inside" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Lithium-ion · what we recover</span>
+      <h2>A spent battery is a box of critical minerals.</h2>
+      <p class="lede">Hover the cell to pull its layers apart. Select an element to see where it sits in the battery and what we recover it as.</p>
+    </div>
+    <div class="inside">
+      <svg class="cell-art" viewBox="0 0 460 340" role="img" aria-label="Exploded view of a lithium-ion pouch cell: cathode, separator, anode and casing">
+        <defs>
+          <linearGradient id="gCath" x1="0" x2="1"><stop offset="0" stop-color="#1C5D9C"/><stop offset="1" stop-color="#5B8ED0"/></linearGradient>
+          <linearGradient id="gAn" x1="0" x2="1"><stop offset="0" stop-color="#2A2F2C"/><stop offset="1" stop-color="#535B56"/></linearGradient>
+        </defs>
+        <g class="layer l1"><rect x="40" y="40" width="70" height="230" rx="6" fill="#B87333"/><rect x="48" y="48" width="54" height="214" rx="4" fill="url(#gCath)"/><text x="75" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">Cathode</text><text x="75" y="316" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)">Li·Ni·Mn·Co on Al</text></g>
+        <g class="layer l2"><rect x="150" y="30" width="22" height="250" rx="4" fill="var(--line)" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="161" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">Separator</text></g>
+        <g class="layer l3"><rect x="210" y="40" width="70" height="230" rx="6" fill="#B87333"/><rect x="218" y="48" width="54" height="214" rx="4" fill="url(#gAn)"/><text x="245" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">Anode</text><text x="245" y="316" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)">graphite on Cu</text></g>
+        <g class="layer l4"><rect x="320" y="20" width="100" height="270" rx="12" fill="none" stroke="var(--green)" stroke-width="4"/><rect x="345" y="6" width="18" height="20" rx="2" fill="#C8CDD0"/><rect x="378" y="6" width="18" height="20" rx="2" fill="#B87333"/><text x="370" y="160" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">Casing +</text><text x="370" y="176" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--muted)">electrolyte</text><text x="370" y="192" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--saffron)">LiPF₆ (toxic)</text></g>
+        <g fill="var(--leaf)"><circle cx="128" cy="120" r="5"><animate attributeName="cx" values="110;205;110" dur="3s" repeatCount="indefinite"/></circle><circle cx="128" cy="180" r="5"><animate attributeName="cx" values="205;110;205" dur="3s" repeatCount="indefinite"/></circle><circle cx="128" cy="230" r="5"><animate attributeName="cx" values="110;205;110" dur="3.6s" repeatCount="indefinite"/></circle></g>
+      </svg>
+      <div class="ptable" id="ptable">
+        <button class="el" style="--c:#7A5CC8" data-k="li" aria-pressed="true"><span class="z">3</span><span class="ms">6.94</span><span class="sym">Li</span><span class="nm">Lithium</span></button>
+        <button class="el" style="--c:#2F6FD6" data-k="ni" aria-pressed="false"><span class="z">28</span><span class="ms">58.69</span><span class="sym">Ni</span><span class="nm">Nickel</span></button>
+        <button class="el" style="--c:#1E8BB3" data-k="co" aria-pressed="false"><span class="z">27</span><span class="ms">58.93</span><span class="sym">Co</span><span class="nm">Cobalt</span></button>
+        <button class="el" style="--c:#C24F86" data-k="mn" aria-pressed="false"><span class="z">25</span><span class="ms">54.94</span><span class="sym">Mn</span><span class="nm">Manganese</span></button>
+        <button class="el" style="--c:#4A5A52" data-k="c" aria-pressed="false"><span class="z">6</span><span class="ms">12.01</span><span class="sym">C</span><span class="nm">Graphite</span></button>
+        <button class="el" style="--c:#C06A1F" data-k="cu" aria-pressed="false"><span class="z">29</span><span class="ms">63.55</span><span class="sym">Cu</span><span class="nm">Copper</span></button>
+        <button class="el" style="--c:#7D8A93" data-k="al" aria-pressed="false"><span class="z">13</span><span class="ms">26.98</span><span class="sym">Al</span><span class="nm">Aluminium</span></button>
+        <button class="el" style="--c:#0E8C5A" data-k="fe" aria-pressed="false"><span class="z">26</span><span class="ms">55.85</span><span class="sym">Fe·P</span><span class="nm">LFP cathode</span></button>
+        <div class="el-detail" id="elDetail" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="chem">
+      <h3 style="margin-bottom:16px">Battery chemistries we will accept</h3>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Chemistry</th><th>Where you find it in India</th><th>Key recoverables</th><th>Recycling value</th></tr></thead>
+          <tbody>
+            <tr><td><b>NMC</b> · nickel manganese cobalt</td><td>Electric cars, premium two-wheelers</td><td>Ni, Co, Mn, Li, Cu, Al</td><td><span class="pill v-hi">High</span></td></tr>
+            <tr><td><b>NCA</b> · nickel cobalt aluminium</td><td>Imported EV packs, power tools</td><td>Ni, Co, Li, Al</td><td><span class="pill v-hi">High</span></td></tr>
+            <tr><td><b>LCO</b> · lithium cobalt oxide</td><td>Phones, laptops, tablets</td><td>Co, Li, Cu</td><td><span class="pill v-hi">High</span></td></tr>
+            <tr><td><b>LMO</b> · lithium manganese oxide</td><td>Older EVs, medical devices</td><td>Mn, Li</td><td><span class="pill v-md">Medium</span></td></tr>
+            <tr><td><b>LFP</b> · lithium iron phosphate</td><td>E-rickshaws, buses, solar &amp; telecom storage</td><td>Li, graphite, Cu, Al</td><td><span class="pill v-lo">Lower, rising volume</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our process</span>
+      <h2>From scrap pack to battery-grade material.</h2>
+      <p class="lede">We are designing IRC to go beyond shredding. Material is taken all the way to refined compounds that cell and cathode makers can use again.</p>
+    </div>
+    <div class="flow">
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="13" height="10" rx="1"/><path d="M14 10h4l3 3v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><h3>Collect &amp; trace</h3><p>Reverse logistics from manufacturers, dealers, fleets and aggregators. Every pack is logged for EPR.</p><span class="out">→ Graded packs</span></div>
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="18" rx="2"/><path d="M10 2h4M13 9l-3 5h4l-3 5"/></svg></div><h3>Test &amp; discharge</h3><p>Healthy modules go to second-life storage. The rest are safely discharged.</p><span class="out">→ Safe cells</span></div>
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/><path d="M8 7v10M16 7v10"/></svg></div><h3>Dismantle &amp; shred</h3><p>Packs are opened and cells shredded in an inert atmosphere to prevent fires.</p><span class="out">→ Shred</span></div>
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18l-7 8v6l-4-2v-4z"/></svg></div><h3>Separate</h3><p>Sieving, magnetic and density separation remove steel, aluminium, copper and plastics.</p><span class="out">→ Black mass + metals</span></div>
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-10V2"/><path d="M7 14h10"/></svg></div><h3>Leach &amp; purify</h3><p>Acid leaching, impurity removal and solvent extraction separate each metal.</p><span class="out">→ Metal solutions</span></div>
+      <div class="step"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg></div><h3>Refine &amp; return</h3><p>Crystallised into battery-grade compounds for India's cell supply chain.</p><span class="out">→ Li₂CO₃ · NiSO₄ · CoSO₄ · MnSO₄</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILM -->
+<section id="film" class="band">
+  <div class="wrap film-grid">
+    <div class="sec-head">
+      <span class="eyebrow">Process animation</span>
+      <h2>One battery, back in the loop.</h2>
+      <p class="lede">A 30-second walkthrough of the recycling line we are designing, from collection to battery-grade salts.</p>
+    </div>
+    <div>
+      <div class="screen">
+        <svg class="stage-f" viewBox="0 0 800 450" role="img" aria-label="Animated walkthrough of the IRC recycling process">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2E21"/><stop offset="1" stop-color="#08190F"/></linearGradient>
+            <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3FA7C9"/><stop offset="1" stop-color="#1D5E78"/></linearGradient>
+          </defs>
+          <rect width="800" height="450" fill="url(#sky)"/>
+          <g opacity=".08" stroke="#EAF3ED"><path d="M0 340H800"/><path d="M0 100H800M0 160H800M0 220H800M0 280H800" stroke-dasharray="2 10"/></g>
+          <text x="28" y="40" font-family="JetBrains Mono, monospace" font-size="13" fill="#36B66A" letter-spacing="2" id="filmStamp">IRC · STAGE 1 / 6</text>
+          <!-- 1 collect -->
+        <g class="scene on" data-i="0">
+          <rect x="560" y="200" width="200" height="140" fill="#123A2B" stroke="#24503D" stroke-width="2"/>
+          <path d="M550 200 L660 150 L770 200 Z" fill="#0E7C4A"/>
+          <rect x="615" y="270" width="90" height="70" fill="#08190F"/>
+          <text x="660" y="235" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="26" fill="#EAF3ED">IRC</text>
+          <path d="M0 340H800" stroke="#24503D" stroke-width="3"/>
+          <path d="M0 362H800" stroke="#36B66A" stroke-width="2" stroke-dasharray="26 18" opacity=".5"/>
+          <g style="animation:drive 5s linear infinite">
+            <rect x="0" y="262" width="150" height="70" rx="6" fill="#EAF3ED"/>
+            <rect x="150" y="282" width="56" height="50" rx="8" fill="#36B66A"/>
+            <rect x="166" y="290" width="26" height="18" rx="3" fill="#0B2A1F"/>
+            <g fill="#0B2A1F"><rect x="14" y="276" width="26" height="40" rx="4"/><rect x="48" y="276" width="26" height="40" rx="4"/><rect x="82" y="276" width="26" height="40" rx="4"/><rect x="116" y="276" width="26" height="40" rx="4"/></g>
+            <g fill="#F39C1E"><rect x="22" y="271" width="10" height="6" rx="1"/><rect x="56" y="271" width="10" height="6" rx="1"/><rect x="90" y="271" width="10" height="6" rx="1"/><rect x="124" y="271" width="10" height="6" rx="1"/></g>
+            <g><circle class="sp" cx="40" cy="336" r="14" fill="#1a1a1a" stroke="#A9C2B5" stroke-width="3" stroke-dasharray="6 4"/><circle class="sp" cx="178" cy="336" r="14" fill="#1a1a1a" stroke="#A9C2B5" stroke-width="3" stroke-dasharray="6 4"/></g>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">
+            <rect x="40" y="90" width="150" height="34" rx="17" fill="#123A2B"/><text x="115" y="112" text-anchor="middle">EV &amp; 2W OEMs</text>
+            <rect x="210" y="70" width="150" height="34" rx="17" fill="#123A2B"/><text x="285" y="92" text-anchor="middle">E-rickshaw fleets</text>
+            <rect x="380" y="90" width="150" height="34" rx="17" fill="#123A2B"/><text x="455" y="112" text-anchor="middle">E-waste aggregators</text>
+          </g>
+        </g>
+
+        <!-- 2 discharge -->
+        <g class="scene" data-i="1">
+          <rect x="180" y="110" width="150" height="230" rx="18" fill="none" stroke="#EAF3ED" stroke-width="5"/>
+          <rect x="225" y="88" width="60" height="22" rx="5" fill="#EAF3ED"/>
+          <rect x="194" y="124" width="122" height="202" rx="10" fill="#36B66A" style="transform-box:fill-box;transform-origin:bottom;animation:drain 5s ease-in-out infinite"/>
+          <path d="M345 225 C400 225 400 185 450 185 S500 225 560 225" stroke="#F39C1E" stroke-width="4" fill="none" stroke-dasharray="10 8"><animate attributeName="stroke-dashoffset" from="0" to="-36" dur=".6s" repeatCount="indefinite"/></path>
+          <rect x="560" y="160" width="130" height="130" rx="12" fill="#123A2B" stroke="#24503D" stroke-width="2"/>
+          <g stroke="#F39C1E" stroke-width="4" fill="none" style="animation:zap .8s infinite"><path d="M580 225 l10 -20 l10 40 l10 -40 l10 40 l10 -40 l10 40 l10 -20"/></g>
+          <text x="625" y="315" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">discharge bank</text>
+          <text x="255" y="372" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#A9C2B5">SoH test → 0 V</text>
+        </g>
+
+        <!-- 3 shred -->
+        <g class="scene" data-i="2">
+          <path d="M290 90 L510 90 L470 170 L330 170 Z" fill="#123A2B" stroke="#24503D" stroke-width="3"/>
+          <g fill="#0B2A1F" stroke="#A9C2B5" stroke-width="2"><rect x="350" y="40" width="40" height="56" rx="5" style="animation:shake .15s infinite"/><rect x="405" y="30" width="40" height="66" rx="5" style="animation:shake .18s infinite"/></g>
+          <g stroke="#EAF3ED" stroke-width="4" fill="#24503D">
+            <g class="sp" style="animation-duration:1.2s"><circle cx="365" cy="200" r="38"/><path d="M365 158v84M323 200h84M335 170l60 60M395 170l-60 60"/></g>
+            <g class="sp" style="animation-duration:1.2s;animation-direction:reverse"><circle cx="440" cy="200" r="38"/><path d="M440 158v84M398 200h84M410 170l60 60M470 170l-60 60"/></g>
+          </g>
+          <g>
+            <rect x="350" y="250" width="8" height="5" fill="#B87333" style="animation:fall 1.4s infinite"/>
+            <rect x="380" y="250" width="6" height="6" fill="#222" style="animation:fall 1.1s .3s infinite"/>
+            <rect x="410" y="250" width="9" height="4" fill="#C8CDD0" style="animation:fall 1.3s .6s infinite"/>
+            <rect x="430" y="250" width="6" height="6" fill="#222" style="animation:fall 1s .2s infinite"/>
+            <rect x="455" y="250" width="8" height="5" fill="#B87333" style="animation:fall 1.5s .5s infinite"/>
+            <rect x="395" y="250" width="5" height="5" fill="#222" style="animation:fall .9s .8s infinite"/>
+          </g>
+          <rect x="300" y="360" width="200" height="16" rx="4" fill="#24503D"/>
+          <text x="600" y="210" font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">N₂ inert atmosphere</text>
+          <text x="600" y="230" font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">fire-safe shredding</text>
+        </g>
+
+        <!-- 4 separate -->
+        <g class="scene" data-i="3">
+          <g style="animation:shake .12s infinite">
+            <rect x="120" y="170" width="300" height="16" rx="4" fill="#A9C2B5"/>
+            <g stroke="#08190F" stroke-width="2"><path d="M140 170v16M170 170v16M200 170v16M230 170v16M260 170v16M290 170v16M320 170v16M350 170v16M380 170v16"/></g>
+          </g>
+          <g>
+            <rect x="420" y="160" width="12" height="6" fill="#B87333" style="animation:slideR 1.6s infinite"/>
+            <rect x="420" y="168" width="12" height="6" fill="#C8CDD0" style="animation:slideR 1.6s .5s infinite"/>
+            <rect x="420" y="164" width="10" height="5" fill="#B87333" style="animation:slideR 1.6s 1s infinite"/>
+          </g>
+          <g fill="#1a1a1a">
+            <circle cx="200" cy="200" r="4" style="animation:fall 1.2s infinite"/><circle cx="240" cy="200" r="3" style="animation:fall 1s .4s infinite"/><circle cx="280" cy="200" r="4" style="animation:fall 1.3s .2s infinite"/><circle cx="320" cy="200" r="3" style="animation:fall 1.1s .7s infinite"/><circle cx="260" cy="200" r="3" style="animation:fall .9s .5s infinite"/>
+          </g>
+          <path d="M180 320 L360 320 L340 380 L200 380 Z" fill="#123A2B" stroke="#24503D" stroke-width="2"/>
+          <ellipse cx="270" cy="322" rx="80" ry="12" fill="#151515"/>
+          <text x="270" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#EAF3ED">BLACK MASS</text>
+          <g font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">
+            <rect x="610" y="140" width="140" height="44" rx="8" fill="#123A2B"/><text x="680" y="167" text-anchor="middle" fill="#E4A066">Copper foil</text>
+            <rect x="610" y="196" width="140" height="44" rx="8" fill="#123A2B"/><text x="680" y="223" text-anchor="middle" fill="#C8CDD0">Aluminium</text>
+            <rect x="610" y="252" width="140" height="44" rx="8" fill="#123A2B"/><text x="680" y="279" text-anchor="middle">Steel · plastics</text>
+          </g>
+        </g>
+
+        <!-- 5 hydromet -->
+        <g class="scene" data-i="4">
+          <rect x="90" y="140" width="190" height="200" rx="14" fill="#123A2B" stroke="#EAF3ED" stroke-width="3"/>
+          <rect x="98" y="190" width="174" height="142" rx="8" fill="url(#liq)"/>
+          <g fill="#EAF3ED">
+            <circle cx="130" cy="320" r="5" style="animation:bub 2s infinite"/><circle cx="170" cy="320" r="4" style="animation:bub 1.6s .4s infinite"/><circle cx="210" cy="320" r="6" style="animation:bub 2.2s .8s infinite"/><circle cx="245" cy="320" r="4" style="animation:bub 1.8s .2s infinite"/>
+          </g>
+          <text x="185" y="370" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">LEACH</text>
+          <path d="M282 260 H340" stroke="#36B66A" stroke-width="4" stroke-dasharray="8 6"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur=".7s" repeatCount="indefinite"/></path>
+          <g>
+            <clipPath id="c1"><rect x="350" y="120" width="56" height="220" rx="10"/></clipPath>
+            <clipPath id="c2"><rect x="440" y="120" width="56" height="220" rx="10"/></clipPath>
+            <clipPath id="c3"><rect x="530" y="120" width="56" height="220" rx="10"/></clipPath>
+            <clipPath id="c4"><rect x="620" y="120" width="56" height="220" rx="10"/></clipPath>
+            <g clip-path="url(#c1)"><rect x="350" y="120" width="56" height="220" fill="#0B2A1F"/><g style="animation:band 2.4s linear infinite"><rect x="350" y="-20" width="56" height="30" fill="#C24F86" opacity=".8"/><rect x="350" y="50" width="56" height="30" fill="#C24F86" opacity=".8"/><rect x="350" y="120" width="56" height="30" fill="#C24F86" opacity=".8"/><rect x="350" y="190" width="56" height="30" fill="#C24F86" opacity=".8"/></g></g>
+            <g clip-path="url(#c2)"><rect x="440" y="120" width="56" height="220" fill="#0B2A1F"/><g style="animation:band 2.8s linear infinite"><rect x="440" y="-20" width="56" height="30" fill="#1E8BB3" opacity=".85"/><rect x="440" y="50" width="56" height="30" fill="#1E8BB3" opacity=".85"/><rect x="440" y="120" width="56" height="30" fill="#1E8BB3" opacity=".85"/><rect x="440" y="190" width="56" height="30" fill="#1E8BB3" opacity=".85"/></g></g>
+            <g clip-path="url(#c3)"><rect x="530" y="120" width="56" height="220" fill="#0B2A1F"/><g style="animation:band 2.2s linear infinite"><rect x="530" y="-20" width="56" height="30" fill="#2F6FD6" opacity=".85"/><rect x="530" y="50" width="56" height="30" fill="#2F6FD6" opacity=".85"/><rect x="530" y="120" width="56" height="30" fill="#2F6FD6" opacity=".85"/><rect x="530" y="190" width="56" height="30" fill="#2F6FD6" opacity=".85"/></g></g>
+            <g clip-path="url(#c4)"><rect x="620" y="120" width="56" height="220" fill="#0B2A1F"/><g style="animation:band 2.6s linear infinite"><rect x="620" y="-20" width="56" height="30" fill="#7A5CC8" opacity=".85"/><rect x="620" y="50" width="56" height="30" fill="#7A5CC8" opacity=".85"/><rect x="620" y="120" width="56" height="30" fill="#7A5CC8" opacity=".85"/><rect x="620" y="190" width="56" height="30" fill="#7A5CC8" opacity=".85"/></g></g>
+            <g fill="none" stroke="#EAF3ED" stroke-width="3"><rect x="350" y="120" width="56" height="220" rx="10"/><rect x="440" y="120" width="56" height="220" rx="10"/><rect x="530" y="120" width="56" height="220" rx="10"/><rect x="620" y="120" width="56" height="220" rx="10"/></g>
+            <g font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5" text-anchor="middle"><text x="378" y="370">Mn</text><text x="468" y="370">Co</text><text x="558" y="370">Ni</text><text x="648" y="370">Li</text></g>
+            <text x="513" y="104" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#A9C2B5">SOLVENT EXTRACTION</text>
+          </g>
+        </g>
+
+        <!-- 6 refine & return -->
+        <g class="scene" data-i="5">
+          <g font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle" fill="#EAF3ED">
+            <path d="M80 330 L120 270 L160 330 Z" fill="#E9E4F5"/><text x="120" y="356">Li₂CO₃</text>
+            <path d="M190 330 L230 262 L270 330 Z" fill="#3E9F62"/><text x="230" y="356">NiSO₄</text>
+            <path d="M300 330 L340 266 L380 330 Z" fill="#C2457A"/><text x="340" y="356">CoSO₄</text>
+            <path d="M410 330 L450 272 L490 330 Z" fill="#E7B9C9"/><text x="450" y="356">MnSO₄</text>
+          </g>
+          <g>
+            <circle cx="120" cy="260" r="6" fill="#E9E4F5" style="--dx:510px;--dy:-60px;animation:toCell 2s infinite"/>
+            <circle cx="230" cy="255" r="6" fill="#3E9F62" style="--dx:400px;--dy:-50px;animation:toCell 2s .5s infinite"/>
+            <circle cx="340" cy="258" r="6" fill="#C2457A" style="--dx:290px;--dy:-55px;animation:toCell 2s 1s infinite"/>
+            <circle cx="450" cy="262" r="6" fill="#E7B9C9" style="--dx:180px;--dy:-60px;animation:toCell 2s 1.5s infinite"/>
+          </g>
+          <rect x="580" y="120" width="120" height="210" rx="16" fill="none" stroke="#EAF3ED" stroke-width="5"/>
+          <rect x="615" y="100" width="50" height="20" rx="5" fill="#EAF3ED"/>
+          <rect x="592" y="132" width="96" height="186" rx="8" fill="#36B66A" style="transform-box:fill-box;transform-origin:bottom;animation:fillup 5s ease-in-out infinite"/>
+          <path d="M640 170 C622 198 622 234 640 254 C658 234 658 198 640 170 Z" fill="#0B2A1F" opacity=".7"/>
+          <text x="640" y="362" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#EAF3ED">NEW CELL · MADE IN INDIA</text>
+          <text x="285" y="150" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="34" fill="#EAF3ED">Battery-grade salts</text>
+          <text x="285" y="182" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#A9C2B5">back to India's cell makers</text>
+        </g>
+        </svg>
+        <div class="film-cap" id="filmCap"></div>
+      </div>
+      <div class="film-bar">
+        <button class="play" id="playBtn" type="button" aria-label="Pause animation"><svg viewBox="0 0 24 24" fill="currentColor" id="playIco"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+        <div class="chips" id="chips"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Research &amp; technology</span>
+      <h2>Why our process is built around hydrometallurgy.</h2>
+      <p class="lede">There are three ways to recycle a lithium-ion cell. We chose the route that recovers lithium, runs at low temperature and produces battery-grade output.</p>
+    </div>
+    <div class="tech-grid">
+      <article class="tcard">
+        <span class="eyebrow">Pyrometallurgy</span>
+        <h3>Smelting</h3>
+        <p>Cells are melted in a furnace above 1,400 °C. Cobalt, nickel and copper form an alloy; lithium and aluminium end up in slag.</p>
+        <dl><dt>Recovers</dt><dd>Co, Ni, Cu</dd><dt>Loses</dt><dd>Lithium, graphite, Mn</dd><dt>Trade-off</dt><dd>Simple feed preparation, very high energy use and emissions</dd></dl>
+      </article>
+      <article class="tcard pick">
+        <span class="eyebrow">Hydrometallurgy</span>
+        <h3>Chemical leaching</h3>
+        <p>Black mass is dissolved in acid at modest temperature. Solvent extraction and precipitation separate each metal into high-purity salts.</p>
+        <dl><dt>Recovers</dt><dd>Li, Ni, Co, Mn (+ Cu, Al, graphite upstream)</dd><dt>Purity</dt><dd>Battery-grade; up to 99.8% Li₂CO₃ reported in published work</dd><dt>Trade-off</dt><dd>Needs careful reagent and effluent management</dd></dl>
+      </article>
+      <article class="tcard">
+        <span class="eyebrow">Direct recycling</span>
+        <h3>Cathode regeneration</h3>
+        <p>The cathode crystal is harvested and re-lithiated without breaking it down into elements. Promising for LFP.</p>
+        <dl><dt>Recovers</dt><dd>Whole cathode material</dd><dt>Status</dt><dd>Pilot stage globally</dd><dt>Trade-off</dt><dd>Needs sorted, single-chemistry feed</dd></dl>
+      </article>
+    </div>
+    <div class="rd">
+      <article><span class="chip-s st-rd">Active</span><h3>Lithium yield</h3><p>Published studies report lithium recoveries of about 72% to 89% from mixed black mass, with nickel and cobalt above 80%. Our process development targets the top of that range.</p></article>
+      <article><span class="chip-s st-rd">Active</span><h3>LFP economics</h3><p>LFP cells contain no cobalt or nickel, so value depends on efficient lithium and graphite recovery. We are evaluating direct regeneration for India's large e-rickshaw battery base.</p></article>
+      <article><span class="chip-s st-rd">Active</span><h3>Zero liquid discharge</h3><p>Closed-loop water and reagent recovery, by-product handling and fluoride capture, so nothing hazardous leaves the site.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY -->
+<section id="industry" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Industry &amp; policy</span>
+      <h2>India's battery boom is creating a waste and resource challenge.</h2>
+      <p class="lede">Lithium-ion demand is compounding at more than 35% a year. Batteries put into service between 2020 and 2025 start reaching end of life just as IRC comes online.</p>
+    </div>
+    <div class="problem-grid">
+      <article class="pcard"><div class="big num">~800 GWh</div><p>Cumulative lithium-ion battery market in India projected by 2030, up from 2.9 GWh in 2018. Every one of those cells eventually retires.</p></article>
+      <article class="pcard"><div class="big num">~30%</div><p>Yearly growth in India's lithium-ion battery waste. Informal dismantling leaks toxic electrolyte and heavy metals into soil and water and causes fires.</p></article>
+      <article class="pcard"><div class="big">No reserves</div><p>India has no meaningful domestic reserves of cobalt or lithium and imports most battery materials. Roughly 30% of a battery's value is in its metals.</p></article>
+    </div>
+    <div class="mkt">
+      <figure class="chart">
+        <h3>India lithium-ion volumes, GWh</h3>
+        <p class="sub">Projections by JMK Research</p>
+        <svg viewBox="0 0 560 230" role="img" aria-label="Bar chart: annual demand 2.9 GWh in 2018, 132 GWh in 2030; recyclable volume about 22.5 GWh in 2030">
+          <g class="grid"><line x1="170" y1="10" x2="170" y2="190"/><line x1="298.6" y1="10" x2="298.6" y2="190"/><line x1="427.1" y1="10" x2="427.1" y2="190"/><line x1="530" y1="10" x2="530" y2="190"/></g>
+          <text x="170" y="210" text-anchor="middle">0</text><text x="298.6" y="210" text-anchor="middle">50</text><text x="427.1" y="210" text-anchor="middle">100</text><text x="530" y="210" text-anchor="middle">140</text>
+          <text x="160" y="46" text-anchor="end">Demand 2018</text>
+          <rect class="bar" x="170" y="28" width="7.5" height="26" rx="3" fill="var(--muted)"/>
+          <text class="val" x="184" y="46">2.9</text>
+          <text x="160" y="106" text-anchor="end">Demand 2030</text>
+          <rect class="bar" x="170" y="88" width="339.4" height="26" rx="3" fill="var(--green)" style="animation-delay:.15s"/>
+          <text class="val" x="500" y="106" text-anchor="end" style="fill:#fff">132</text>
+          <text x="160" y="166" text-anchor="end">Recyclable 2030</text>
+          <rect class="bar" x="170" y="148" width="57.9" height="26" rx="3" fill="var(--saffron-fill)" style="animation-delay:.3s"/>
+          <text class="val" x="236" y="166">22–23 ≈ US$1 bn</text>
+        </svg>
+      </figure>
+      <div class="kpis">
+        <div class="kpi"><b class="num">US$1 bn</b><span>Estimated value of India's lithium-ion recycling market in 2030, from 22–23 GWh of retired batteries.</span></div>
+        <div class="kpi"><b class="num">3.2 Mt</b><span>E-waste generated in India every year.</span></div>
+        <div class="kpi"><b class="num">270 kt</b><span>New annual recycling capacity the government aims to build by 2031.</span></div>
+      </div>
+    </div>
+    <div class="policy">
+      <article class="pol">
+        <span class="eyebrow">Battery Waste Management Rules, 2022</span>
+        <h3>Producers are responsible for recycling</h3>
+        <ul>
+          <li>Extended Producer Responsibility covers every battery type, including EV batteries. Producers register with CPCB and must meet collection and recycling targets.</li>
+          <li>Registered recyclers generate EPR certificates that producers use to meet their obligations, exchanged on a central online portal.</li>
+          <li>Missed targets attract environmental compensation.</li>
+        </ul>
+        <div>
+          <p style="font-size:.85rem;color:var(--muted);margin-bottom:6px">Minimum material recovery, EV &amp; portable batteries</p>
+          <div class="steps3"><div><b>70%</b><small>2024-25</small></div><div><b>80%</b><small>2025-26</small></div><div><b>90%</b><small>2026-27 →</small></div></div>
+        </div>
+      </article>
+      <article class="pol">
+        <span class="eyebrow">National Critical Mineral Mission</span>
+        <h3>₹1,500 crore recycling incentive</h3>
+        <ul>
+          <li>20% capital subsidy on plant, machinery and utilities, plus an operating incentive on incremental sales. Runs FY2025-26 to FY2030-31.</li>
+          <li>Up to ₹50 crore per large entity and ₹25 crore per small entity. One-third of the outlay is reserved for small recyclers and start-ups.</li>
+          <li>Only plants that actually extract critical minerals qualify, not black-mass-only units.</li>
+          <li>Customs duty on lithium-ion battery scrap was removed in FY2025-26.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="land-head">
+      <h3>India's recycling landscape</h3>
+      <p style="color:var(--muted)">A young industry with a handful of established players and a large capacity gap.</p>
+    </div>
+    <div class="land">
+      <div class="co"><b>Attero</b><span class="cap">~15,000 t/yr Li-ion</span><p>India's largest e-waste and battery recycler, scaling battery capacity toward 50,000 t/yr.</p></div>
+      <div class="co"><b>Recyclekaro</b><span class="cap">10,000 t/yr batteries</span><p>Palghar, Maharashtra. Works with two-wheeler and EV makers.</p></div>
+      <div class="co"><b>Lohum</b><span class="cap">Recycling + second life</span><p>Combines refurbishment of used packs with material recovery.</p></div>
+      <div class="co"><b>Tata Chemicals</b><span class="cap">Since 2019</span><p>Began lithium-ion recycling operations in Mumbai in 2019.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our roadmap</span>
+      <h2>From research to a multi-stream recycler.</h2>
+    </div>
+    <div class="road">
+      <div class="ph now"><span class="when">NOW · 2026</span><b>Research &amp; design</b><ul><li>Process development</li><li>Site selection and consents</li><li>Technology partnerships</li></ul></div>
+      <div class="ph"><span class="when">2027 · LAUNCH</span><b>Lithium-ion operations</b><ul><li>CPCB recycler registration</li><li>Collection network with producers</li><li>Discharge, shredding, separation</li></ul></div>
+      <div class="ph"><span class="when">2028</span><b>Refining</b><ul><li>Hydrometallurgy line online</li><li>Battery-grade salts to cell makers</li><li>Second-life storage products</li></ul></div>
+      <div class="ph"><span class="when">2029 +</span><b>New streams</b><ul><li>E-waste and circuit boards</li><li>Solar panels</li><li>Further capacity</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK WITH US -->
+<section id="partner" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Work with us</span>
+      <h2>We are building partnerships ahead of launch.</h2>
+      <p class="lede">If you make, sell, collect or study batteries and electronics, or want to invest in India's circular economy, we would like to hear from you.</p>
+    </div>
+    <div class="partners">
+      <a class="pt" href="#contact" data-topic="Battery producer / OEM (EPR)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><rect x="6" y="4" width="12" height="18" rx="2"/><path d="M10 2h4M9 13l2 2 4-4"/></svg><b>Producers &amp; OEMs</b><p>Meet your EPR targets with a formal, traceable recycling partner.</p><span>Enquire →</span></a>
+      <a class="pt" href="#contact" data-topic="Collection / aggregation"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><rect x="1" y="7" width="13" height="10" rx="1"/><path d="M14 10h4l3 3v4h-7"/></svg><b>Collectors &amp; fleets</b><p>Supply end-of-life batteries and e-waste through our collection network.</p><span>Enquire →</span></a>
+      <a class="pt" href="#contact" data-topic="Investment"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><b>Investors</b><p>Learn about our plans and funding requirements.</p><span>Enquire →</span></a>
+      <a class="pt" href="#contact" data-topic="Research collaboration"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-10V2"/></svg><b>Research partners</b><p>Collaborate on process chemistry, testing and pilot trials.</p><span>Enquire →</span></a>
+      <a class="pt" href="#contact" data-topic="Careers"><svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg><b>Careers</b><p>Engineers, chemists and operations people who want to build from the start.</p><span>Enquire →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact">
+    <div class="cinfo">
+      <div style="display:grid;gap:14px">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk.</h2>
+        <p class="lede">Send us a message and our team will get back to you.</p>
+      </div>
+      <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>Email</small><b id="mailAddr">info.aviragroup@gmail.com</b><button class="copy-btn" type="button" data-copy="info.aviragroup@gmail.com">Copy</button></div></div>
+      <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>Plant location</small><b>To be announced</b></div></div>
+      <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Status</small><b>Research &amp; development · launching 2027</b></div></div>
+    </div>
+
+    <form class="cf" id="contactForm" novalidate>
+      <div class="field"><label for="f-name">Full name <em>*</em></label><input id="f-name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
+      <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization"></div>
+      <div class="field"><label for="f-email">Email <em>*</em></label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
+      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91"></div>
+      <div class="field full"><label for="f-topic">I'm getting in touch about <em>*</em></label>
+        <select id="f-topic" name="topic" required>
+          <option value="">Choose one</option>
+          <option>Battery producer / OEM (EPR)</option>
+          <option>Collection / aggregation</option>
+          <option>Investment</option>
+          <option>Research collaboration</option>
+          <option>Careers</option>
+          <option>Something else</option>
+        </select><span class="err" id="e-topic"></span></div>
+      <div class="field full"><label for="f-msg">Message <em>*</em></label><textarea id="f-msg" name="message" required></textarea><span class="err" id="e-msg"></span></div>
+      <div class="hp" aria-hidden="true"><label for="f-hp">Leave this empty</label><input id="f-hp" name="_honey" tabindex="-1" autocomplete="off"></div>
+      <div class="form-foot">
+        <small>We use your details only to reply to your message.</small>
+        <button class="btn btn-solid" id="sendBtn" type="submit">Send message</button>
+      </div>
+      <div class="form-msg" id="formMsg" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div style="display:grid;gap:14px;align-content:start">
+        <img src="assets/logo/irc-logo-horizontal-white.svg" alt="IRC – Indian Recycle Company" width="173" height="48">
+        <p style="max-width:40ch">An industrial recycling company for a clean and green India. In research and development, launching 2027.</p>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#recycle">What we recycle</a></li><li><a href="#process">Process</a></li><li><a href="#research">Research</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul><li><a href="#partner">Work with us</a></li><li><a href="#contact">Contact form</a></li><li>info.aviragroup@gmail.com</li></ul></div>
+    </div>
+    <div class="fbase"><span>© <span id="yr">2026</span> Indian Recycle Company (IRC). All rights reserved.</span><span>Launching 2027</span></div>
+  </div>
+</footer>
+</body>
+</html>
