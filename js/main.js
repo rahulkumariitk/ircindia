@@ -1,5 +1,5 @@
 /* ==========================================================================
-   IRC – Indian Recycle Company · site behaviour
+   IRC – Indian Recycling Company · site behaviour
    --------------------------------------------------------------------------
    Sections: countdown · hero animation · battery element explorer ·
    process animation · partner shortcuts · copy buttons · contact form

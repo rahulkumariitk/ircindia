@@ -1,6 +1,6 @@
-# IRC – Indian Recycle Company website
+# IRC – Indian Recycling Company website
 
-Company website for **Indian Recycle Company (IRC)**, an industrial recycling company for a clean and green India. IRC is in its research and development phase and begins commercial operations in 2027, starting with lithium-ion battery recycling.
+Company website for **Indian Recycling Company (IRC)**, an industrial recycling company for a clean and green India. IRC is in its research and development phase and begins commercial operations in 2027, starting with lithium-ion battery recycling.
 
 It is a plain static website (HTML, CSS and JavaScript). There is no build step and nothing to install.
 
@@ -82,4 +82,4 @@ Market, policy and industry figures on the site come from public sources, includ
 
 ## Licence
 
-© Indian Recycle Company (IRC). All rights reserved. The IRC name and logo may not be reused without permission.
+© Indian Recycling Company (IRC). All rights reserved. The IRC name and logo may not be reused without permission.
