@@ -373,14 +373,29 @@ const LAUNCH_DATE = "2027-01-01T00:00:00+05:30"; // countdown target shown in th
       });
       clearTimeout(to);
       const j = await r.json().catch(() => ({}));
-      if (!r.ok || String(j.success) === "false") throw new Error(j.message || "send failed");
-      form.reset();
+      if (r.ok && String(j.success) !== "false") {
+        form.reset();
+        note(
+          "ok",
+          "Message sent",
+          "Thank you for contacting IRC. Our team will reply to the email address you gave.",
+        );
+        return;
+      }
+      // The form service answered but did not deliver (e.g. the form still needs activation).
+      console.warn("FormSubmit response", r.status, j);
+      const reason = String(j.message || `The mail service answered with status ${r.status}.`).replace(
+        /[<>&]/g,
+        (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" })[c],
+      );
       note(
-        "ok",
-        "Message sent",
-        "Thank you for contacting IRC. Our team will reply to the email address you gave.",
+        "warn",
+        "Your message was not delivered yet",
+        `${reason}<br>Meanwhile you can email us at <b style="display:inline;font:inherit;font-weight:600">${CONTACT_EMAIL}</b> <button class="copy-btn" type="button" data-copy="${CONTACT_EMAIL}">Copy address</button>.`,
       );
     } catch (err) {
+      // The request never reached the mail service (offline, blocked, or opened from a file).
+      console.warn("Contact form could not reach FormSubmit:", err);
       note(
         "warn",
         "We couldn't send your message from here",
