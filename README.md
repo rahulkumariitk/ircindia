@@ -34,20 +34,41 @@ irc-website/
 
 To preview, open `index.html` in a browser. The contact form only sends email when the site is online (see below).
 
-## Publishing with GitHub Pages (free)
+## Publishing with GitHub Pages on ircind.com
 
+The site is set up to run on **https://ircind.com** (the `CNAME` file in this repository holds the domain).
+
+**1. Turn on GitHub Pages**
 1. In this repository, open **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose branch **main** and folder **/ (root)**, then click **Save**.
-3. After a minute the site is live at `https://<your-username>.github.io/irc-website/`.
-4. To use your own domain later, add it under **Settings → Pages → Custom domain**.
+2. Under **Build and deployment**, set **Source** to *Deploy from a branch*, branch **main**, folder **/ (root)**, then **Save**.
+3. Under **Custom domain**, make sure it shows `ircind.com`.
 
-Every time you push a change to `main`, the live site updates automatically.
+**2. Point the domain at GitHub** (at the company where you bought ircind.com, in its DNS settings)
+
+| Type | Host / Name | Value |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | rahulkumariitk.github.io |
+
+Optional IPv6 (AAAA, host @): `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`.
+
+Delete any other A, AAAA or CNAME records for `@` and `www` (for example a "parked page" record from your registrar).
+
+**3. Turn on HTTPS**
+DNS changes can take from a few minutes up to 24 hours. Once **Settings → Pages** shows the DNS check as successful, tick **Enforce HTTPS**.
+
+**Recommended:** verify the domain under your GitHub profile **Settings → Pages → Add a domain**, which protects it from being claimed by other GitHub accounts.
+
+Every push to `main` updates the live site automatically.
 
 ## Turning on the contact form (one-time)
 
 The form sends messages to `info.aviragroup@gmail.com` through [FormSubmit](https://formsubmit.co), a free form-to-email service.
 
-1. Once the site is live, send a test message through the contact form.
+1. Once https://ircind.com is live, send a test message through the contact form.
 2. FormSubmit sends a confirmation email to that inbox (check Spam/Promotions too). Click **Activate Form**.
 3. From then on, every enquiry arrives in the inbox with the sender's name, organisation, email, phone, enquiry type and message. Replying goes straight to the sender.
 
